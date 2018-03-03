@@ -1,0 +1,16 @@
+/node_modules
+/.vscode
+*.js.map
+/obj
+/temp
+/bin
+/dist-cg
+*.suo
+*.csproj
+*.csproj.user
+*.sln
+/coverage
+/.vs
+/dist
+/docs/Gemfile.lock
+/docs/_site

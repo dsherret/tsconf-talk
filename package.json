@@ -5,8 +5,11 @@
   "main": "dist\\index.js",
   "scripts": {
     "test": "npm run build && mocha --recursive dist",
+    "refactor": "npm run build && node dist/refactor.js",
     "build": "npm run clean && tsc",
-    "clean": "rmdir /s /q dist"
+    "build-scripts": "npm run clean-scripts && tsc -p tsconfig.scripts.json",
+    "clean": "rimraf dist",
+    "clean-scripts": "rimraf dist-scripts"
   },
   "repository": {
     "type": "git",
@@ -24,6 +27,7 @@
     "@types/node": "^9.4.6",
     "chai": "^4.1.2",
     "mocha": "^5.0.1",
+    "ts-simple-ast": "^8.2.1",
     "typescript": "^2.7.2"
   }
 }

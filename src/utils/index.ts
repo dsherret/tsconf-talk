@@ -1,1 +1,1 @@
-export * from "./nameToSnakeCase";
+export * from "./ObjectUtils";

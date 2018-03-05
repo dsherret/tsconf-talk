@@ -1,0 +1,7 @@
+{
+  "extends": "./tsconfig",
+  "compilerOptions": {
+    "rootDir": "scripts",
+    "outDir": "dist-scripts"
+  }
+}

@@ -1,7 +1,8 @@
 {
   "extends": "./tsconfig",
   "compilerOptions": {
-    "rootDir": "scripts",
-    "outDir": "dist-scripts"
-  }
+    "rootDir": "./scripts",
+    "outDir": "./dist-scripts"
+  },
+  "exclude": ["node_module", "./dist", "./dist-scripts", "global.d.ts", "./src"]
 }

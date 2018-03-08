@@ -1,16 +1,14 @@
-import Ast, {SyntaxKind} from "ts-simple-ast";
+import Project, {SyntaxKind} from "ts-simple-ast";
 import {nameToSnakeCase} from "./utils";
 
-const ast = new Ast({
-    tsConfigFilePath: "../src/tsconfig.json"
+const project = new Project({
+    tsConfigFilePath: "tsconfig.json"
 });
 
-const srcDirectory = ast.getDirectoryOrThrow("../src"); // todo: update to include all root directories
-
-for (const sourceFile of srcDirectory.getDescendantSourceFiles()) {
-    // rename the source file if it contains a class by the same name
+for (const sourceFile of project.getSourceFiles("src/**/*.ts")) {
+    // rename the source file if it contains an exported class with the same name
     const classSameName = sourceFile.getClass(sourceFile.getBaseNameWithoutExtension());
-    if (classSameName != null && classSameName.isExported())
+    if (classSameName !== undefined && classSameName.isExported())
         sourceFile.move(nameToSnakeCase(sourceFile.getBaseNameWithoutExtension()) + sourceFile.getExtension());
 
     // rename all class declaration names to snake case
@@ -20,6 +18,6 @@ for (const sourceFile of srcDirectory.getDescendantSourceFiles()) {
     }
 }
 
-//ast.save();
+project.save();
 console.log("done");
 

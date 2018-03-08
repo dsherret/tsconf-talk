@@ -4,16 +4,17 @@
  */
 export function nameToSnakeCase(name: string) {
     let snakeCaseName = "";
-    let wasLastUnderscore = false;
+    let canNextBeUnderscore = false;
 
     for (const char of name) {
         const isSeparatorChar = /[A-Z]/.test(char);
-        if (snakeCaseName.length > 0 && isSeparatorChar && !wasLastUnderscore)
+        if (isSeparatorChar && canNextBeUnderscore)
             snakeCaseName += "_";
 
         snakeCaseName += char.toLowerCase();
-        wasLastUnderscore = isSeparatorChar || char === "_";
+        canNextBeUnderscore = !isSeparatorChar && char !== "_";
     }
 
     return snakeCaseName;
 }
+

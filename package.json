@@ -4,10 +4,11 @@
   "description": "Files for my talk at tsconf.",
   "main": "dist\\index.js",
   "scripts": {
-    "test": "npm run build && mocha --recursive dist",
-    "refactor": "npm run build && node dist/refactor.js",
-    "build": "npm run clean && tsc",
-    "build-scripts": "npm run clean-scripts && tsc -p tsconfig.scripts.json",
+    "test": "npm run --silent build && mocha --recursive dist",
+    "analyze": "npm run --silent build-scripts && node dist-scripts/analyze.js",
+    "refactor": "npm run --silent build-scripts && node dist-scripts/refactor.js",
+    "build": "npm run --silent clean && tsc -p tsconfig.main.json",
+    "build-scripts": "npm run --silent clean-scripts && tsc -p tsconfig.scripts.json",
     "clean": "rimraf dist",
     "clean-scripts": "rimraf dist-scripts"
   },
@@ -27,7 +28,7 @@
     "@types/node": "^9.4.6",
     "chai": "^4.1.2",
     "mocha": "^5.0.1",
-    "ts-simple-ast": "^8.2.1",
+    "ts-simple-ast": "^8.2.3",
     "typescript": "^2.7.2"
   }
 }

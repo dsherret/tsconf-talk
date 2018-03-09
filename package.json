@@ -5,8 +5,9 @@
   "main": "dist\\index.js",
   "scripts": {
     "test": "npm run --silent build && mocha --recursive dist",
-    "analyze": "npm run --silent build-scripts && node dist-scripts/analyze.js",
-    "refactor": "npm run --silent build-scripts && node dist-scripts/refactor.js",
+    "analyze": "node dist-scripts/analyze.js",
+    "refactor": "node dist-scripts/refactor.js",
+    "setup": "npm run --silent build-scripts",
     "build": "npm run --silent clean && tsc -p tsconfig.main.json",
     "build-scripts": "npm run --silent clean-scripts && tsc -p tsconfig.scripts.json",
     "clean": "rimraf dist",

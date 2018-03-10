@@ -4,5 +4,5 @@
     "rootDir": "./scripts",
     "outDir": "./dist-scripts"
   },
-  "exclude": ["node_module", "./dist", "./dist-scripts", "global.d.ts", "./src"]
+  "exclude": ["node_modules", "./dist", "./dist-scripts", "global.d.ts", "./src"]
 }

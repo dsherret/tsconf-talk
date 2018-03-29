@@ -1,5 +1,5 @@
 import {StoreFactory} from "./factories";
 
 const factory = new StoreFactory();
-
-var personStore = factory.getPersonStore();
+const personStore = factory.getPersonStore();
+// ...etc...

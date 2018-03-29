@@ -8,7 +8,7 @@ const project = new Project({
 for (const sourceFile of project.getSourceFiles("src/**/*.ts")) {
     // rename all class declaration names to snake case
     for (const classDec of sourceFile.getDescendantsOfKind(SyntaxKind.ClassDeclaration)) {
-        const snakeCaseName = nameToSnakeCase(classDec.getName());
+        const snakeCaseName = nameToSnakeCase(classDec.getNameOrThrow());
         classDec.rename(snakeCaseName);
     }
 

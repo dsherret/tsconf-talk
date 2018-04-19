@@ -1,5 +1,5 @@
 /* barrel:ignore */
-import {ObjectUtils} from "./../utils";
+import { ObjectUtils } from "./../utils";
 
 export class BaseStore<TValue, TKeyPropName extends keyof TValue, TKey extends TValue[TKeyPropName]= TValue[TKeyPropName]> {
     private readonly items = new Map<TKey, TValue>();

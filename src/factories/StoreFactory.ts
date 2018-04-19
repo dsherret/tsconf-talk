@@ -1,4 +1,4 @@
-import {NoteStore, PersonStore} from "./../stores";
+import { NoteStore, PersonStore } from "./../stores";
 
 export class StoreFactory {
     private noteStore: NoteStore | undefined;

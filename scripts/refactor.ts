@@ -1,5 +1,5 @@
-import Project, {SyntaxKind} from "ts-simple-ast";
-import {nameToSnakeCase} from "./utils";
+import Project, { SyntaxKind } from "ts-simple-ast";
+import { nameToSnakeCase } from "./utils";
 
 const project = new Project({
     tsConfigFilePath: "tsconfig.json"

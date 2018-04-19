@@ -1,6 +1,6 @@
-import {Person} from "./../models";
-import {BaseStore} from "./BaseStore";
-import {NoteStore} from "./NoteStore";
+import { Person } from "./../models";
+import { BaseStore } from "./BaseStore";
+import { NoteStore } from "./NoteStore";
 
 export class PersonStore extends BaseStore<Person, "personId"> {
     constructor(private readonly noteStore: NoteStore) {

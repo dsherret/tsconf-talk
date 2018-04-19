@@ -1,5 +1,5 @@
-import {Note, Person} from "./../models";
-import {BaseStore} from "./BaseStore";
+import { Note, Person } from "./../models";
+import { BaseStore } from "./BaseStore";
 
 export class NoteStore extends BaseStore<Note, "noteId"> {
     constructor() {

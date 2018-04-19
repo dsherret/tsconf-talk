@@ -1,4 +1,4 @@
-import Project, {SyntaxKind} from "ts-simple-ast";
+import Project, { SyntaxKind } from "ts-simple-ast";
 
 // setup
 const project = new Project({

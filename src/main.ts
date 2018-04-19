@@ -1,4 +1,4 @@
-import {StoreFactory} from "./factories";
+import { StoreFactory } from "./factories";
 
 const factory = new StoreFactory();
 

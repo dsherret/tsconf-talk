@@ -1,5 +1,5 @@
-import {expect} from "chai";
-import {nameToSnakeCase} from "./../../utils";
+import { expect } from "chai";
+import { nameToSnakeCase } from "./../../utils";
 
 describe("nameToSnakeCase", () => {
     function doTest(input: string, expectedOutput: string, message: string) {

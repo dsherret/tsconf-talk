@@ -33,7 +33,7 @@
     "mocha": "^5.0.1",
     "rimraf": "^2.6.2",
     "ts-node": "^5.0.1",
-    "ts-simple-ast": "^10.4.0",
+    "ts-simple-ast": "11.1.0",
     "typescript": "^2.8.1"
   }
 }

@@ -23,3 +23,7 @@ Other libraries I should have mentioned in the talk:
 * [Type Doc](http://typedoc.org/) - TypeScript documentation generator.
 * [barrel-maintainer](https://github.com/dsherret/barrel-maintainer) - Automated real-time [barrel](https://angular.io/guide/glossary#barrel) maintenance.
 * More?
+
+## Video
+
+[![Static Analysis and Source Code Manipulation in TypeScript](https://img.youtube.com/vi/CTpKZgy0dpo/0.jpg)](https://www.youtube.com/watch?v=CTpKZgy0dpo)

@@ -13,7 +13,7 @@ This was the code for my talk at [tsconf 2018](https://tsconf.io/).
 
 ## More Information
 
-* [ts-ast-viewer](http://ts-ast-viewer.com/) - View the TypeScript AST including types, symbols, and more.
+* [ts-ast-viewer](https://ts-ast-viewer.com/) - View the TypeScript AST including types, symbols, and more.
 * [ts-simple-ast](https://github.com/dsherret/ts-simple-ast) - Library for analyzing and manipulating typescript code.
 
 ## Additional Use Cases
